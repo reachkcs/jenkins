@@ -13,7 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                pip3 install -r requirements.txt
+                sudo apt install -y python3-fire
                 '''
             }
         }
