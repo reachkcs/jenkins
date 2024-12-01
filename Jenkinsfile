@@ -4,6 +4,9 @@ pipeline {
             label 'kcs-jenkins-agent'
         }
     }
+    triggers {
+        pollSCM 'H/5 * * * *'
+    }
     stages {
         stage('Build') {
             steps {
